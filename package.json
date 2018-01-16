@@ -1,0 +1,22 @@
+{
+  "name": "TW-big-school-third",
+  "version": "1.0.0",
+  "description": "开发一个简单的猜数字游戏，基本业务逻辑如下：",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DH-TB/TW-big-school-third.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DH-TB/TW-big-school-third/issues"
+  },
+  "homepage": "https://github.com/DH-TB/TW-big-school-third#readme"
+}
