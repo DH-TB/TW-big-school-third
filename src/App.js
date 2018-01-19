@@ -3,7 +3,7 @@ const CompareNumber = require('./CompareNumber');
 
 class App {
     static game() {
-        App.start();
+        this.start();
 
         let chance = 6;
         const answers = AnswerGenerate.randomGenerate();
@@ -15,14 +15,14 @@ class App {
             process.stdin.on('data', (inputs)=> {
                 const array = inputs.trim().split('');
                 const repeatNumberLength = array.filter((ele, i, arr) => arr.indexOf(ele) !== i).length;
-                
+
                 if (array.length !== 4 || repeatNumberLength > 0) {
                     chance--;
-                    App.illegal();
-                    App.print(chance);
+                    this.illegal();
+                    this.print(chance);
                 }
                 else if(inputs.trim() === answers){
-                    App.success();
+                    this.success();
                     process.exit();
                 }
                 else {
@@ -30,10 +30,10 @@ class App {
                     console.log(result + '\n');
                     chance--;
                     if (chance === 0) {
-                        App.failure();
+                        this.failure();
                         process.exit();
                     }
-                    App.print(chance);
+                    this.print(chance);
                 }
             })
     }

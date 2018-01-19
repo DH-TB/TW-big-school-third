@@ -9,7 +9,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "start":"node src/App.js"
   },
   "repository": {
     "type": "git",
